@@ -5,11 +5,12 @@ import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Dropdown from 'react-bootstrap/Dropdown';
 
 export const NavBar = () => {
   return (
     <Container style={{margin: '0px', padding: '0px'}} >
-    <Navbar bg="dark" data-bs-theme="dark" style={{borderRadius: '10px'}}>
+    <Navbar className="nav-bar">
       <Container>
         <Row>
           <Col md="auto">
@@ -27,6 +28,18 @@ export const NavBar = () => {
             >
               Página Interna
             </NavLink>
+          </Col>
+          <Col md="auto">
+              <Dropdown>
+                <Dropdown.Toggle className="button" id="dropdown-basic">
+                  Carreras
+                </Dropdown.Toggle>
+                <Dropdown.Menu>
+                  <Dropdown.Item href="/informatica">Ingenieria Civil Informatica</Dropdown.Item>
+                  <Dropdown.Item href="/matematicas">Ingenieria Civil Matematicas</Dropdown.Item>
+                  <Dropdown.Item href="/minas">Ingenieria Civil en Minas</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
           </Col>
         </Row>
       </Container>

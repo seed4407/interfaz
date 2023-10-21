@@ -3,12 +3,12 @@ import Button from 'react-bootstrap/Button';
 
 import NavBar from '../components/nav_bar'
 
-export const HomePage = () => {
+export const Minas = () => {
   return (
     <div className='page'>
       <h1 className='title'>Admision USM</h1>
       <NavBar />
-      <h1 className='subtitle'>Página de Inici</h1>
+      <h1 className='subtitle'>Ingeniera Civil en Minas</h1>
       <Button className="button" variant="primary">Primary</Button>{' '}
       <p className='plaintext'>Minions ipsum me want bananaaa! Para tú hahaha wiiiii. Hahaha daa chasy potatoooo. Bee do bee do bee do poulet tikka masala para tú uuuhhh bananaaaa tank yuuu! Daa underweaaar. Underweaaar underweaaar butt potatoooo tatata bala tu tank yuuu! Baboiii hana dul sae hana dul sae hahaha. Wiiiii potatoooo bappleees ti aamoo! Uuuhhh tatata bala tu la bodaaa. Uuuhhh pepete daa hahaha potatoooo.
 
@@ -17,4 +17,4 @@ Uuuhhh potatoooo uuuhhh daa hana dul sae daa me want bananaaa! Me want bananaaa!
   )
 }
 
-export default HomePage
+export default Minas

@@ -7,6 +7,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import HomePage from '../pages/home'
 import InternalPage from '../pages/internal'
+import Informatica from '../pages/informatica'
+import Matematica from '../pages/matematica'
+import Minas from '../pages/minas'
 
 const AppRouter = () => {
   return (
@@ -14,6 +17,9 @@ const AppRouter = () => {
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/internal' element={<InternalPage />} />
+          <Route path='/informatica' element={<Informatica />} />
+          <Route path='/matematicas' element={<Matematica />} />
+          <Route path='/minas' element={<Minas />} />
         </Routes>
     </BrowserRouter>
   )
