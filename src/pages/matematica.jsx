@@ -8,6 +8,7 @@ import LogoUDC from '../assets/udc.png'
 import LogoUSACH from '../assets/usach.png'
 import LogoUDV from '../assets/udv.png'
 import Accordion from 'react-bootstrap/Accordion';
+import Table from 'react-bootstrap/Table';
 
 export const Matematica = () => {
   return (
@@ -24,7 +25,7 @@ export const Matematica = () => {
           <Card.Text>
           Puntaje corte 2022: 603{"\n"} Puntaje corte 2021: 602 {"\n"} Puntaje corte 2020: 685
           </Card.Text>
-          <Button variant="primary">Inscribirse</Button>
+          <Button variant="primary" href="/inscripcion">Inscribirse</Button>
         </Card.Body>
         </Card.ImgOverlay>
       </Card>
@@ -65,6 +66,32 @@ export const Matematica = () => {
         </Card.ImgOverlay>
       </Card>
     </CardGroup>
+    <Table striped bordered hover size="sm" className="careerTable" style={{width: '58rem'}}>
+      <thead>
+          <tr>
+              <th>NEM</th>
+              <th>RANKING</th>
+              <th>C. LECT</th>
+              <th>M1</th>
+              <th>Historia y CS</th>
+              <th>CIENCIAS</th>
+              <th>M2</th>
+              <th>PUNTAJE PONDERADO MINIMO</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>15</td>
+              <td>20</td>
+              <td>10</td>
+              <td>35</td>
+              <td>10</td>
+              <td>Ó 10 </td>
+              <td>10</td>
+              <td>600</td>
+          </tr>
+      </tbody>
+    </Table>
     <Accordion defaultActiveKey="0"  style={{width: '58rem'}}>
       <Accordion.Item eventKey="0">
         <Accordion.Header>Peril de Egreso</Accordion.Header>

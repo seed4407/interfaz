@@ -8,13 +8,14 @@ import LogoUDC from '../assets/udc.png'
 import LogoUSACH from '../assets/usach.png'
 import LogoUCDN from '../assets/ucdn.png'
 import Accordion from 'react-bootstrap/Accordion';
+import Table from 'react-bootstrap/Table';
 
 export const Minas = () => {
   return (
     <div className='page'>
       <NavBar />
       <center>
-      <h1 className='subtitle'>Ingeniera Civil en Minas</h1>
+      <h1 className='subtitle'>Ingeniera Civil de Minas</h1>
       <CardGroup style={{ width: '58rem', height: '16rem', alignItems: 'center', margin: 0}}>
       <Card className='card-career-1'>
         <Card.Img variant="top" src={LogoUSM} style={{opacity: 0.1}}/>
@@ -24,7 +25,7 @@ export const Minas = () => {
           <Card.Text>
           Puntaje corte 2022: 618{"\n"} Puntaje corte 2021: 600 {"\n"} Puntaje corte 2020: 620
           </Card.Text>
-          <Button variant="primary">Inscribirse</Button>
+          <Button variant="primary" href="/inscripcion">Inscribirse</Button>
         </Card.Body>
         </Card.ImgOverlay>
       </Card>
@@ -65,6 +66,32 @@ export const Minas = () => {
         </Card.ImgOverlay>
       </Card>
     </CardGroup>
+    <Table striped bordered hover size="sm" className="careerTable" style={{width: '58rem'}}>
+      <thead>
+          <tr>
+              <th>NEM</th>
+              <th>RANKING</th>
+              <th>C. LECT</th>
+              <th>M1</th>
+              <th>Historia y CS</th>
+              <th>CIENCIAS</th>
+              <th>M2</th>
+              <th>PUNTAJE PONDERADO MINIMO</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>15</td>
+              <td>20</td>
+              <td>10</td>
+              <td>35</td>
+              <td>10</td>
+              <td>Ó 10 </td>
+              <td>10</td>
+              <td>600</td>
+          </tr>
+      </tbody>
+    </Table>
     <Accordion defaultActiveKey="0"  style={{width: '58rem'}}>
       <Accordion.Item eventKey="0">
         <Accordion.Header>Peril de Egreso</Accordion.Header>
