@@ -33,9 +33,6 @@ export const NavBar = () => {
                 <Button className='button button-secundarios' href="/repositorio">Repositorio</Button>
               </Col>
               <Col md="auto">
-                <Button className='button button-secundarios' href="https://usm.cl">Universidad</Button>
-              </Col>
-              <Col md="auto">
                   <Dropdown>
                     <Dropdown.Toggle className="button button-secundarios" id="dropdown-basic">
                       Carreras
@@ -46,6 +43,9 @@ export const NavBar = () => {
                       <Dropdown.Item href="/minas">Ingenieria Civil en Minas</Dropdown.Item>
                     </Dropdown.Menu>
                   </Dropdown>
+              </Col>
+              <Col md="auto">
+                <Button className='button button-secundarios' href="https://usm.cl">Universidad</Button>
               </Col>
             </Row>
           </Container>
