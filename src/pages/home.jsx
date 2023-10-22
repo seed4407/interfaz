@@ -1,18 +1,85 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
-
+import Card from 'react-bootstrap/Card';
 import NavBar from '../components/nav_bar'
+import { Col, Container, Row } from 'react-bootstrap';
+import admision from '../assets/usm-admision-1.jpeg'
 
 export const HomePage = () => {
   return (
     <div className='page'>
-      <h1 className='title'>Admision USM</h1>
       <NavBar />
-      <h1 className='subtitle'>Página de Inici</h1>
-      <Button className="button" variant="primary">Primary</Button>{' '}
-      <p className='plaintext'>Minions ipsum me want bananaaa! Para tú hahaha wiiiii. Hahaha daa chasy potatoooo. Bee do bee do bee do poulet tikka masala para tú uuuhhh bananaaaa tank yuuu! Daa underweaaar. Underweaaar underweaaar butt potatoooo tatata bala tu tank yuuu! Baboiii hana dul sae hana dul sae hahaha. Wiiiii potatoooo bappleees ti aamoo! Uuuhhh tatata bala tu la bodaaa. Uuuhhh pepete daa hahaha potatoooo.
+      <p className='plaintext' style={{marginLeft: "70px"}}>Bienvenidos al portal de admision de la Universidad Tecnica Federico Santa Maria</p>
+      <Container>
+        <Row>
+          <Col xs={4}>
+            <Card body className='card-fecha'><b>Inicio periodo postulacion: 10/07/2023</b></Card>
+          </Col>
+          <Col xs={4}>
+            <Card body className='card-fecha'><b>Fin periodo postulacion: 10/12/2023</b></Card>
+          </Col>
+          <Col xs={4}>
+            <Card body className='card-fecha'><b>Resultados: 10/12/2024</b></Card>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Card className='card-home' style={{height: "100%"}}>
+              <Container style={{paddingLeft:"0px"}}>
+                <Row>
+                  <Col>
+                    <Card.Img style={{objectFit:"contain"}} src={admision} thumbnail />
+                  </Col>
+                  <Col>
+                    <Card.Body>
+                      <Card.Title>Postula aqui</Card.Title>
+                      <Card.Text>
+                          Some quick example text to build on the card title and make up the
+                          bulk of the card's content.
+                          Some quick example text to build on the card title and make up the
 
-Uuuhhh potatoooo uuuhhh daa hana dul sae daa me want bananaaa! Me want bananaaa! Poopayee me want bananaaa! Tulaliloo jeje baboiii daa hana dul sae underweaaar tulaliloo bee do bee do bee do. Chasy para tú para tú tank yuuu! Jiji hahaha poulet tikka masala. Hahaha chasy wiiiii poopayee. Para tú poopayee me want bananaaa! Pepete po kass. Chasy po kass baboiii potatoooo gelatooo aaaaaah belloo! Butt wiiiii pepete underweaaar jiji me want bananaaa! Hahaha bee do bee do bee do hahaha po kass. Pepete uuuhhh para tú potatoooo para tú baboiii daa.</p>
+                      </Card.Text>
+                      <Button variant="primary">Go somewhere</Button>
+                    </Card.Body>
+                  </Col>
+                </Row>
+              </Container>
+            </Card>
+          </Col>
+          <Col>
+            <Row>
+              <Col>
+                <Card className='card-home' style={{marginBottom: "10px"}}>
+                  <Card.Img variant="top" src="" />
+                  <Card.Body>
+                    <Card.Title>Repositorio</Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and make up the
+                      bulk of the card's content.
+                    </Card.Text>
+                    <Button variant="primary">Go somewhere</Button>
+                  </Card.Body>
+                </Card>
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <Card className='card-home'>
+                  <Card.Img variant="top" src="" />
+                  <Card.Body>
+                    <Card.Title>Carreras</Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and make up the
+                      bulk of the card's content.
+                    </Card.Text>
+                    <Button variant="primary">Go somewhere</Button>
+                  </Card.Body>
+                </Card>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
+      </Container>
     </div>
   )
 }
