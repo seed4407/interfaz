@@ -4,6 +4,9 @@ import Card from 'react-bootstrap/Card';
 import NavBar from '../components/nav_bar'
 import { Col, Container, Row } from 'react-bootstrap';
 import admision from '../assets/usm-admision-1.jpeg'
+import informacion from '../assets/imagen-info.png'
+import carrera from '../assets/imagen-carrera.png'
+import Dropdown from 'react-bootstrap/Dropdown';
 
 export const HomePage = () => {
   return (
@@ -28,7 +31,7 @@ export const HomePage = () => {
               <Container className='container-card'>
                 <Row>
                   <Col>
-                    <Card.Img style={{objectFit:"fill"}} src={admision} thumbnail />
+                    <Card.Img style={{objectFit:"scale-down"}} src={admision} />
                   </Col>
                   <Col>
                     <Card.Body>
@@ -36,7 +39,7 @@ export const HomePage = () => {
                       <Card.Text>
                         <p className='plaintext'>La Universidad Tecnica Federico Santa Maria a iniciado su periodo de postulacion para sus carrera, si estas interesado en inscribirte, apreta el boton inscripcion que se encuentra en la parte inferior</p>
                       </Card.Text>
-                      <Button className='button' href="/inscripcion">Inscripcion</Button>
+                      <Button className='button' href="/inscripcion">Inscribirse</Button>
                     </Card.Body>
                   </Col>
                 </Row>
@@ -50,16 +53,15 @@ export const HomePage = () => {
                   <Container className='container-card'>
                     <Row>
                       <Col>
-                        <Card.Img style={{objectFit:"fill"}} src={admision} thumbnail />
+                        <Card.Img style={{objectFit:"fill"}} src={informacion} thumbnail />
                       </Col>
                       <Col>
                         <Card.Body>
-                          <Card.Title>Repositorio</Card.Title>
+                          <Card.Title><h1 className='subtitle'>Información general</h1></Card.Title>
                           <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
+                            <p className='plaintext'>Si deseas buscar informacion general de la Universidad, se cuenta con un repositorio donde se encuentra toda la informacion reunida por secciones</p>
                           </Card.Text>
-                          <Button variant="primary">Go somewhere</Button>
+                          <Button className='button' href="/repositorio">Ver mas</Button>
                         </Card.Body>
                       </Col>
                     </Row>
@@ -73,16 +75,24 @@ export const HomePage = () => {
                   <Container className='container-card'>
                     <Row>
                       <Col>
-                        <Card.Img style={{objectFit:"fill"}} src={admision} thumbnail />
+                        <Card.Img style={{objectFit:"fill"}} src={carrera} thumbnail />
                       </Col>
                       <Col>
                         <Card.Body>
-                          <Card.Title>Carreras</Card.Title>
+                          <Card.Title><h1 className='subtitle'>Carreras</h1></Card.Title>
                           <Card.Text>
-                            Some quick example text to build on the card title and make up the
-                            bulk of the card's content.
+                          <p className='plaintext'>Si deseas buscar informacion sobre una carrera en especifico impartida por la Universidad, se tiene un apartado dedicado a cada una</p>
                           </Card.Text>
-                          <Button variant="primary">Go somewhere</Button>
+                          <Dropdown>
+                            <Dropdown.Toggle className="button button-secundarios" id="dropdown-basic">
+                              Ver mas
+                              </Dropdown.Toggle>
+                              <Dropdown.Menu>
+                                <Dropdown.Item href="/informatica">Ingenieria Civil Informatica</Dropdown.Item>
+                                <Dropdown.Item href="/matematicas">Ingenieria Civil Matematicas</Dropdown.Item>
+                                <Dropdown.Item href="/minas">Ingenieria Civil en Minas</Dropdown.Item>
+                              </Dropdown.Menu>
+                            </Dropdown>
                         </Card.Body>
                       </Col>
                     </Row>

@@ -11,13 +11,15 @@ import LogoUSM from '../assets/usm.png'
 
 export const NavBar = () => {
   return (
-    <Container style={{margin: '0px', padding: '0px'}} >
-      <Row md={4}>
-        <Col md={4}>
-          <Image style={{width:"20%",marginLeft:"65px" }}src={LogoUSM} />
+    <Container>
+      <Row>
+        <Col md={2}>
+          <Image style={{width:"40%",marginLeft:"65px" }}src={LogoUSM} />
         </Col>
-        <Col md={4}>
-          <h1 className='title'>Admision USM</h1>
+        <Col md={3}>
+          <h1 className='title' style={{paddingTop: "24px" }}>Admision USM</h1>
+        </Col>
+        <Col md={6}>
         </Col>
       </Row>
       <Row>
@@ -25,7 +27,7 @@ export const NavBar = () => {
           <Container>
             <Row>
               <Col md="auto">
-                <Button  className='button size-nav-bar button-inicio' href="/">Inicio</Button>
+                <Button  className='button button-secundarios' href="/">Inicio</Button>
               </Col>
               <Col md="auto">
                 <Button className='button button-secundarios' href="/inscripcion">Inscripcion</Button>
