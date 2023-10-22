@@ -11,21 +11,18 @@ import LogoUSM from '../assets/usm.png'
 
 export const NavBar = () => {
   return (
+    <center>
     <Container>
-      <Row>
-        <Col md={2}>
-          <Image style={{width:"40%",marginLeft:"65px" }}src={LogoUSM} />
-        </Col>
-        <Col md={3}>
-          <h1 className='title' style={{paddingTop: "24px" }}>Admision USM</h1>
-        </Col>
-        <Col md={6}>
-        </Col>
-      </Row>
-      <Row>
-        <Navbar className="nav-bar" >
+      <Row >
+        <Navbar className="nav-bar" style={{width: "85%"}}>
           <Container>
             <Row>
+              <Col md="1">
+                <Image style={{width:"100%"}}src={LogoUSM} />
+              </Col>
+              <Col md="auto">
+                <h1 className='title' style={{color: "white", paddingTop: "3px"}}> <b>Admision USM</b></h1>
+              </Col>
               <Col md="auto">
                 <Button  className='button button-secundarios' href="/">Inicio</Button>
               </Col>
@@ -34,6 +31,9 @@ export const NavBar = () => {
               </Col>
               <Col md="auto">
                 <Button className='button button-secundarios' href="/repositorio">Repositorio</Button>
+              </Col>
+              <Col md="auto">
+                <Button className='button button-secundarios' href="https://usm.cl">Universidad</Button>
               </Col>
               <Col md="auto">
                   <Dropdown>
@@ -52,6 +52,7 @@ export const NavBar = () => {
         </Navbar>
       </Row>
     </Container>
+    </center>
   )
 }
 
