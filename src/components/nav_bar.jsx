@@ -21,13 +21,13 @@ export const NavBar = () => {
                 <Image style={{width:"100%"}}src={LogoUSM} />
               </Col>
               <Col md="auto">
-                <h1 className='title' style={{color: "white", paddingTop: "3px"}}> <b>Admision USM</b></h1>
+                <h1 className='title' style={{color: "white", paddingTop: "3px"}}> <b>Admisión USM</b></h1>
               </Col>
               <Col md="auto">
                 <Button  className='button button-secundarios' href="/">Inicio</Button>
               </Col>
               <Col md="auto">
-                <Button className='button button-secundarios' href="/inscripcion">Inscripcion</Button>
+                <Button className='button button-secundarios' href="/inscripcion">Inscripción</Button>
               </Col>
               <Col md="auto">
                 <Button className='button button-secundarios' href="/repositorio">Repositorio</Button>
@@ -38,9 +38,9 @@ export const NavBar = () => {
                       Carreras
                     </Dropdown.Toggle>
                     <Dropdown.Menu>
-                      <Dropdown.Item href="/informatica">Ingenieria Civil Informatica</Dropdown.Item>
-                      <Dropdown.Item href="/matematicas">Ingenieria Civil Matematicas</Dropdown.Item>
-                      <Dropdown.Item href="/minas">Ingenieria Civil en Minas</Dropdown.Item>
+                      <Dropdown.Item href="/informatica">Ingeniería Civil Informática</Dropdown.Item>
+                      <Dropdown.Item href="/matematicas">Ingeniería Civil Matemáticas</Dropdown.Item>
+                      <Dropdown.Item href="/minas">Ingeniería Civil en Minas</Dropdown.Item>
                     </Dropdown.Menu>
                   </Dropdown>
               </Col>

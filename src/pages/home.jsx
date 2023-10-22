@@ -13,14 +13,14 @@ export const HomePage = () => {
   return (
     <div className='page'>
       <NavBar />
-      <p className='subtitle' style={{marginLeft: "70px"}}>Bienvenidos al portal de admision de la Universidad Tecnica Federico Santa Maria</p>
+      <p className='subtitle' style={{marginLeft: "70px"}}>Bienvenidos al portal de admisión de la Universidad Técnica Federico Santa Maria</p>
       <Container>
         <Row>
           <Col xs={4}>
-            <Card body className='card-fecha'><b>Inicio periodo postulacion: 02/01/2024</b></Card>
+            <Card body className='card-fecha'><b>Inicio periodo postulación: 02/01/2024</b></Card>
           </Col>
           <Col xs={4}>
-            <Card body className='card-fecha'><b>Fin periodo postulacion: 05/01/2024</b></Card>
+            <Card body className='card-fecha'><b>Fin periodo postulación: 05/01/2024</b></Card>
           </Col>
           <Col xs={4}>
             <Card body className='card-fecha'><b>Resultados: 16/01/2024 </b></Card>
@@ -37,9 +37,9 @@ export const HomePage = () => {
                   </Col>
                   <Col xs={6}>
                     <Card.Body>
-                      <Card.Title><h1 className='title'>Postula aqui</h1></Card.Title>
+                      <Card.Title><h1 className='title'>Postula aquí</h1></Card.Title>
                       <Card.Text>
-                        <p className='plaintext'>La Universidad Tecnica Federico Santa Maria a iniciado su periodo de postulacion para sus carrera, si estas interesado en inscribirte, apreta el boton inscripcion que se encuentra en la parte inferior</p>
+                        <p className='plaintext'>La Universidad Técnica Federico Santa Maria ha iniciado su periodo de postulación para sus carreras, si estás interesado en inscribirte, apretá el botón inscripción que se encuentra en la parte inferior</p>
                       </Card.Text>
                       <Button className='button' href="/inscripcion">Inscribirse</Button>
                     </Card.Body>
@@ -61,9 +61,9 @@ export const HomePage = () => {
                       <Card.Body>
                         <Card.Title><h1 className='subtitle'>Información general</h1></Card.Title>
                         <Card.Text>
-                          <p className='plaintext'>Si deseas buscar informacion general de la Universidad, se cuenta con un repositorio donde se encuentra toda la informacion reunida por secciones</p>
+                          <p className='plaintext'>Si deseas buscar información general de la Universidad, se cuenta con un repositorio donde se encuentra toda la información reunida por secciones</p>
                         </Card.Text>
-                        <Button className='button' href="/repositorio">Ver mas</Button>
+                        <Button className='button' href="/repositorio">Ver más</Button>
                       </Card.Body>
                     </Col>
                   </Row>
@@ -81,16 +81,16 @@ export const HomePage = () => {
                     <Card.Body>
                       <Card.Title><h1 className='subtitle'>Carreras</h1></Card.Title>
                       <Card.Text>
-                        <p className='plaintext'>Si deseas buscar informacion sobre una carrera en especifico impartida por la Universidad, se tiene un apartado dedicado a cada una</p>
+                        <p className='plaintext'>Si deseas buscar información sobre una carrera en específico impartida por la Universidad, se tiene un apartado dedicado a cada una</p>
                       </Card.Text>
                         <Dropdown>
                           <Dropdown.Toggle className="button button-secundarios" id="dropdown-basic">
-                            Ver mas
+                            Ver más
                           </Dropdown.Toggle>
                           <Dropdown.Menu>
-                              <Dropdown.Item href="/informatica">Ingenieria Civil Informatica</Dropdown.Item>
-                              <Dropdown.Item href="/matematicas">Ingenieria Civil Matematicas</Dropdown.Item>
-                               <Dropdown.Item href="/minas">Ingenieria Civil en Minas</Dropdown.Item>
+                              <Dropdown.Item href="/informatica">Ingeniería Civil Informática</Dropdown.Item>
+                              <Dropdown.Item href="/matematicas">Ingeniería Civil Matemáticas</Dropdown.Item>
+                               <Dropdown.Item href="/minas">Ingeniería Civil en Minas</Dropdown.Item>
                           </Dropdown.Menu>
                         </Dropdown>
                     </Card.Body>
