@@ -6,7 +6,6 @@ import NavBar from '../components/nav_bar'
 export const Matematica = () => {
   return (
     <div className='page'>
-      <h1 className='title'>Admision USM</h1>
       <NavBar />
       <h1 className='subtitle'>Ingeniera Civil Matematica</h1>
       <Button className="button" variant="primary">Primary</Button>{' '}

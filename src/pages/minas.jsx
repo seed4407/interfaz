@@ -6,7 +6,6 @@ import NavBar from '../components/nav_bar'
 export const Minas = () => {
   return (
     <div className='page'>
-      <h1 className='title'>Admision USM</h1>
       <NavBar />
       <h1 className='subtitle'>Ingeniera Civil en Minas</h1>
       <Button className="button" variant="primary">Primary</Button>{' '}
