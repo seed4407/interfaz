@@ -112,15 +112,77 @@ export const Repositorio = () => {
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="3">
-                    <Accordion.Header><b>Preguntas Frecuentes</b></Accordion.Header>
+                    <Accordion.Header><b>Informacion Adicional</b></Accordion.Header>
                     <Accordion.Body>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum.
+                    <ul>
+                    <li><h1 className='plaintext'><b>¿Donde se localiza?</b></h1>
+                                    <Table striped bordered hover size="sm">
+                                        <thead>
+                                            <tr>
+                                                <th>Campus/Sede</th>
+                                                <th>Ubicacion</th>
+                                                <th>Contacto</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Campus Casa Central Valparaíso</td>
+                                                <td>Avenida España 1680, Valparaíso</td>
+                                                <td>+56 32 265 4000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Campus San Joaquín</td>
+                                                <td>Avenida Vicuña Mackenna 3939, San Joaquín, Santiago</td>
+                                                <td>+56 2 2303 7000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Campus Vitacura</td>
+                                                <td>Avenida Santa María 6400, Vitacura, Santiago</td>
+                                                <td>+56 2 3202 8000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sede Viña del Mar</td>
+                                                <td>Avenida Federico Santa María 6090, Viña del Mar</td>
+                                                <td>+56 32 2277 700</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sede Concepción</td>
+                                                <td>Arteaga Alemparte 943, Hualpén, Concepción</td>
+                                                <td>+56 41 2407 500</td>
+                                            </tr>
+                                        </tbody>
+                                    </Table>
+                    </li>
+                    <li><h1 className='plaintext'><b>Si tengo una duda, ¿a quien puedo consultar?</b></h1>
+                                    <Table striped bordered hover size="sm">
+                                        <thead>
+                                            <tr>
+                                                <th>Contacto</th>
+                                                <th>Correo</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Dirección de Admisión</td>
+                                                <td>admision@usm.cl</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dirección de Relaciones Estudiantiles</td>
+                                                <td>info.rree@usm.cl</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Directora de Emprendimiento</td>
+                                                <td>dir.emprendimiento@usm.cl</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dirección de Recursos Humanos</td>
+                                                <td>informaciones.rrhh@usm.cl</td>
+                                            </tr>
+                                        </tbody>
+                                    </Table>
+                    </li>
+
+                    </ul>
                     </Accordion.Body>
                 </Accordion.Item>
             </Accordion>

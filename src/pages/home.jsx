@@ -25,21 +25,18 @@ export const HomePage = () => {
         <Row>
           <Col>
             <Card className='card-home' style={{height: "100%"}}>
-              <Container>
+              <Container className='container-card'>
                 <Row>
                   <Col>
                     <Card.Img style={{objectFit:"fill"}} src={admision} thumbnail />
                   </Col>
                   <Col>
                     <Card.Body>
-                      <Card.Title>Postula aqui</Card.Title>
+                      <Card.Title><h1 className='title'>Postula aqui</h1></Card.Title>
                       <Card.Text>
-                          Some quick example text to build on the card title and make up the
-                          bulk of the card's content.
-                          Some quick example text to build on the card title and make up the
-
+                        <p className='plaintext'>La Universidad Tecnica Federico Santa Maria a iniciado su periodo de postulacion para sus carrera, si estas interesado en inscribirte, apreta el boton inscripcion que se encuentra en la parte inferior</p>
                       </Card.Text>
-                      <Button variant="primary">Go somewhere</Button>
+                      <Button className='button' href="/inscripcion">Inscripcion</Button>
                     </Card.Body>
                   </Col>
                 </Row>
@@ -50,7 +47,7 @@ export const HomePage = () => {
             <Row>
               <Col>
                 <Card className='card-home' style={{marginBottom: "10px"}}>
-                  <Container>
+                  <Container className='container-card'>
                     <Row>
                       <Col>
                         <Card.Img style={{objectFit:"fill"}} src={admision} thumbnail />
@@ -73,7 +70,7 @@ export const HomePage = () => {
             <Row>
               <Col>
                 <Card className='card-home'>
-                  <Container>
+                  <Container className='container-card'>
                     <Row>
                       <Col>
                         <Card.Img style={{objectFit:"fill"}} src={admision} thumbnail />
