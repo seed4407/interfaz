@@ -10,6 +10,7 @@ import InternalPage from '../pages/internal'
 import Informatica from '../pages/informatica'
 import Matematica from '../pages/matematica'
 import Minas from '../pages/minas'
+import Repositorio from '../pages/repositorio';
 
 const AppRouter = () => {
   return (
@@ -17,6 +18,7 @@ const AppRouter = () => {
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/internal' element={<InternalPage />} />
+          <Route path='/repositorio' element={<Repositorio />} />
           <Route path='/informatica' element={<Informatica />} />
           <Route path='/matematicas' element={<Matematica />} />
           <Route path='/minas' element={<Minas />} />

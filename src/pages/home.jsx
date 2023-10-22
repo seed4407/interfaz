@@ -9,7 +9,7 @@ export const HomePage = () => {
   return (
     <div className='page'>
       <NavBar />
-      <p className='plaintext' style={{marginLeft: "70px"}}>Bienvenidos al portal de admision de la Universidad Tecnica Federico Santa Maria</p>
+      <p className='subtitle' style={{marginLeft: "70px"}}>Bienvenidos al portal de admision de la Universidad Tecnica Federico Santa Maria</p>
       <Container>
         <Row>
           <Col xs={4}>
@@ -25,10 +25,10 @@ export const HomePage = () => {
         <Row>
           <Col>
             <Card className='card-home' style={{height: "100%"}}>
-              <Container style={{paddingLeft:"0px"}}>
+              <Container>
                 <Row>
                   <Col>
-                    <Card.Img style={{objectFit:"contain"}} src={admision} thumbnail />
+                    <Card.Img style={{objectFit:"fill"}} src={admision} thumbnail />
                   </Col>
                   <Col>
                     <Card.Body>
@@ -50,30 +50,46 @@ export const HomePage = () => {
             <Row>
               <Col>
                 <Card className='card-home' style={{marginBottom: "10px"}}>
-                  <Card.Img variant="top" src="" />
-                  <Card.Body>
-                    <Card.Title>Repositorio</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and make up the
-                      bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                  </Card.Body>
+                  <Container>
+                    <Row>
+                      <Col>
+                        <Card.Img style={{objectFit:"fill"}} src={admision} thumbnail />
+                      </Col>
+                      <Col>
+                        <Card.Body>
+                          <Card.Title>Repositorio</Card.Title>
+                          <Card.Text>
+                            Some quick example text to build on the card title and make up the
+                            bulk of the card's content.
+                          </Card.Text>
+                          <Button variant="primary">Go somewhere</Button>
+                        </Card.Body>
+                      </Col>
+                    </Row>
+                  </Container>
                 </Card>
               </Col>
             </Row>
             <Row>
               <Col>
                 <Card className='card-home'>
-                  <Card.Img variant="top" src="" />
-                  <Card.Body>
-                    <Card.Title>Carreras</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and make up the
-                      bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                  </Card.Body>
+                  <Container>
+                    <Row>
+                      <Col>
+                        <Card.Img style={{objectFit:"fill"}} src={admision} thumbnail />
+                      </Col>
+                      <Col>
+                        <Card.Body>
+                          <Card.Title>Carreras</Card.Title>
+                          <Card.Text>
+                            Some quick example text to build on the card title and make up the
+                            bulk of the card's content.
+                          </Card.Text>
+                          <Button variant="primary">Go somewhere</Button>
+                        </Card.Body>
+                      </Col>
+                    </Row>
+                  </Container>
                 </Card>
               </Col>
             </Row>

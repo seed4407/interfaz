@@ -31,7 +31,7 @@ export const NavBar = () => {
                 <Button className='button button-secundarios' href="/">Inscripcion</Button>
               </Col>
               <Col md="auto">
-                <Button className='button button-secundarios' href="/">Repositorio</Button>
+                <Button className='button button-secundarios' href="/repositorio">Repositorio</Button>
               </Col>
               <Col md="auto">
                   <Dropdown>
