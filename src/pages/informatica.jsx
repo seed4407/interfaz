@@ -14,7 +14,6 @@ export const Informatica = () => {
   return (
     <div className='page'>
       <NavBar />
-      <center>
       <h1 className='subtitle'>Ingeniera Civil Informatica</h1>
       <CardGroup style={{ width: '58rem', height: '16rem', alignItems: 'center', margin: 0}}>
       <Card className='card-career-1'>
@@ -127,7 +126,7 @@ Un Ingeniero Civil Informático de la UTFSM se puede desempeñar por ejemplo, en
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
-    </center>
+    
     </div>
   )
 }
