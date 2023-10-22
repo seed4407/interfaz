@@ -17,13 +17,13 @@ export const HomePage = () => {
       <Container>
         <Row>
           <Col xs={4}>
-            <Card body className='card-fecha'><b>Inicio periodo postulacion: 15/09/2023</b></Card>
+            <Card body className='card-fecha'><b>Inicio periodo postulacion: 02/01/2024</b></Card>
           </Col>
           <Col xs={4}>
-            <Card body className='card-fecha'><b>Fin periodo postulacion: 10/11/2023</b></Card>
+            <Card body className='card-fecha'><b>Fin periodo postulacion: 05/01/2024</b></Card>
           </Col>
           <Col xs={4}>
-            <Card body className='card-fecha'><b>Resultados: 30/01/2024 </b></Card>
+            <Card body className='card-fecha'><b>Resultados: 16/01/2024 </b></Card>
           </Col>
         </Row>
         <Row>
