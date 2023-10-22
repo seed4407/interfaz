@@ -28,7 +28,7 @@ export const NavBar = () => {
                 <Button  className='button size-nav-bar button-inicio' href="/">Inicio</Button>
               </Col>
               <Col md="auto">
-                <Button className='button button-secundarios' href="/">Inscripcion</Button>
+                <Button className='button button-secundarios' href="/inscripcion">Inscripcion</Button>
               </Col>
               <Col md="auto">
                 <Button className='button button-secundarios' href="/">Repositorio</Button>

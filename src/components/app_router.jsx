@@ -10,6 +10,7 @@ import InternalPage from '../pages/internal'
 import Informatica from '../pages/informatica'
 import Matematica from '../pages/matematica'
 import Minas from '../pages/minas'
+import Inscripcion from '../pages/inscripcion';
 
 const AppRouter = () => {
   return (
@@ -20,6 +21,7 @@ const AppRouter = () => {
           <Route path='/informatica' element={<Informatica />} />
           <Route path='/matematicas' element={<Matematica />} />
           <Route path='/minas' element={<Minas />} />
+          <Route path='/inscripcion' element={<Inscripcion />} />
         </Routes>
     </BrowserRouter>
   )
